@@ -11,6 +11,7 @@ public class ContentPostsInfo {
     private boolean userMark; // в посте может быть отмечен пользователь, может отсутствовать
     private String imageUrl;
     private String soundtrackUrl;
+    private String singerId;
     private String quizeUrl;
     private String videoUrl;
     private String hashtagUrl;
