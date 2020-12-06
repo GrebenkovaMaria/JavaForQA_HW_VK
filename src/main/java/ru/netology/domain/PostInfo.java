@@ -1,11 +1,11 @@
 package ru.netology.domain;
 
 public class PostInfo {
-    public static class LikesInfo{};
-    public static class DonatInfo{};
-    public static class RepostsInfo{};
-    public static class CommentInfo{};
-    public static class ContentPostInfo{};
+    private LikesInfo likesInfo;
+    private DonatInfo donatInfo;
+    private RepostsInfo privateInfo;
+    private CommentInfo commentInfo;
+    private ContentPostsInfo contentPostsInfo;
     private String id;
     private String postUrl;
     private String ownerId;
@@ -34,6 +34,46 @@ public class PostInfo {
     private boolean publicAccess; // в VK это "friendsOnly" все могуст смотреть пост? или огарничение доступа (друзья, друзья друзей и т.д.)
     private boolean interestingForUser; //если truе для конкретного пользователя,то попадает в "сначала интересные"
     private boolean longPost; // для длинных постов появляется кнопка "показать полностью"
+
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public DonatInfo getDonatInfo() {
+        return donatInfo;
+    }
+
+    public void setDonatInfo(DonatInfo donatInfo) {
+        this.donatInfo = donatInfo;
+    }
+
+    public RepostsInfo getPrivateInfo() {
+        return privateInfo;
+    }
+
+    public void setPrivateInfo(RepostsInfo privateInfo) {
+        this.privateInfo = privateInfo;
+    }
+
+    public CommentInfo getCommentInfo() {
+        return commentInfo;
+    }
+
+    public void setCommentInfo(CommentInfo commentInfo) {
+        this.commentInfo = commentInfo;
+    }
+
+    public ContentPostsInfo getContentPostsInfo() {
+        return contentPostsInfo;
+    }
+
+    public void setContentPostsInfo(ContentPostsInfo contentPostsInfo) {
+        this.contentPostsInfo = contentPostsInfo;
+    }
 
     public String getOwnerId() {
         return ownerId;
