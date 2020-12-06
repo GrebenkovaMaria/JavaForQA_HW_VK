@@ -40,10 +40,12 @@ public class PostInfo {
     }
 
     public void setOwnerId(String ownerId) {
+
         this.ownerId = ownerId;
     }
 
     public String getFromId() {
+
         return fromId;
     }
 
@@ -162,6 +164,7 @@ public class PostInfo {
     public void setPostPondId(String postPondId) {
         this.postPondId = postPondId;
     }
+
     public boolean isPinned() {
         return isPinned;
     }
@@ -169,6 +172,7 @@ public class PostInfo {
     public void setPinned(boolean pinned) {
         isPinned = pinned;
     }
+
     public boolean isCommentBlocking() {
         return commentBlocking;
     }
@@ -275,8 +279,7 @@ public class PostInfo {
         this.viewingsQuantity = viewingsQuantity;
     }
 
-    public boolean isInterestingForUser()
-    {
+    public boolean isInterestingForUser() {
         return interestingForUser;
     }
 
