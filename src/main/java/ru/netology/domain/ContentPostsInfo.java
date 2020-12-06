@@ -74,14 +74,6 @@ public class ContentPostsInfo {
         this.hashTag = hashTag;
     }
 
-    public boolean isAuthor() {
-        return author;
-    }
-
-    public void setAuthor(boolean author) {
-        this.author = author;
-    }
-
     public boolean isUserMark() {
         return userMark;
     }
@@ -104,6 +96,14 @@ public class ContentPostsInfo {
 
     public void setSoundtrackUrl(String soundtrackUrl) {
         this.soundtrackUrl = soundtrackUrl;
+    }
+
+    public String getSingerId() {
+        return singerId;
+    }
+
+    public void setSingerId(String singerId) {
+        this.singerId = singerId;
     }
 
     public String getQuizeUrl() {
@@ -136,14 +136,6 @@ public class ContentPostsInfo {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public String getAuthorName() {
-        return authorName;
-    }
-
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
     }
 
     public String getUserMarkUrl() {
